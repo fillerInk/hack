@@ -1,145 +1,162 @@
 /*
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+ * Evento -  Event html  Template
+ * Build Date: jan 2018
+ * Author: colorlib
+ * Copyright (C) 2018 colorlib
+ */
+ /* ------------------------------------- */
+/*  TABLE OF CONTENTS
+ /* ------------------------------------- */
+/*   PRE LOADING                          */
+/*   WOW                                 */
+/*   sliders                      */
+/*    MAPS                               */
+/*   COUNTER JS              */
 
-(function($) {
 
-	var	$window = $(window),
-		$body = $('body'),
-		$header = $('#header'),
-		$banner = $('#banner');
 
-	// Breakpoints.
-		breakpoints({
-			xlarge:	'(max-width: 1680px)',
-			large:	'(max-width: 1280px)',
-			medium:	'(max-width: 980px)',
-			small:	'(max-width: 736px)',
-			xsmall:	'(max-width: 480px)'
-		});
+    /* ==============================================
+/*  PRE LOADING
+  =============================================== */
+'use strict';
+$(window).load(function() {
+    $('.loader').delay(500).fadeOut('slow');
+});
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
 
-	// Header.
-		if ($banner.length > 0
-		&&	$header.hasClass('alt')) {
+$(document).ready(function() {
 
-			$window.on('resize', function() { $window.trigger('scroll'); });
+    'use strict';
+    /* ==============================================
+     /*   wow
+      =============================================== */
+    var wow = new WOW(
+        {
+            animateClass: 'animated',
+            offset: 10,
+            mobile: true
+        }
+    );
+    wow.init();
+    /* ==============================================
+        STICKY HEADER
+        =============================================== */
 
-			$banner.scrollex({
-				bottom:		$header.outerHeight(),
-				terminate:	function() { $header.removeClass('alt'); },
-				enter:		function() { $header.addClass('alt'); },
-				leave:		function() { $header.removeClass('alt'); }
-			});
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() < 100) {
+            $('.header').removeClass('sticky_header');
+        } else {
+            $('.header').addClass('sticky_header');
+        }
+    });
+    /* --------------------------------------------------------
+     COUNTER JS
+     ----------------------------------------------------------- */
 
-		}
+    $('.counter').counterUp({
+        delay: 5,
+        time: 3000
+    });
 
-	// Menu.
-		var $menu = $('#menu');
+    $(".countdown")
+        .countdown("2020/02/01 10:30:00", function(event) {
+            $(this).html(
+                event.strftime('<div>%w <span>Weeks</span></div>  <div>%D <span>Days</span></div>  <div>%H<span>Hours</span></div> <div>%M<span>Minutes</span></div> <div>%S<span>Seconds</span></div>')
+            );
+        });
 
-		$menu._locked = false;
+    /* ==============================================
+     SLIDER
+     =============================================== */
+    $(".cover_slider").owlCarousel({
+        loop:true,
+        autoplay:true,
+        smartSpeed:1000,
+        autoplayHoverPause:false,
+        dots:true,
+        nav:false,
+        items:1,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        dotsContainer: '.cover_dots'
+    });
 
-		$menu._lock = function() {
+    $(".brand_carousel").owlCarousel({
+        loop:true,
+        autoplay:true,
+        smartSpeed:450,
+        autoplayHoverPause:false,
+        dots:false,
+        nav:false,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:3
 
-			if ($menu._locked)
-				return false;
+            },
+            1000:{
+                items:5
 
-			$menu._locked = true;
+            }
+        },
+        items:5
+    });
+    /* ------------------------------------- */
+    /* Animated progress bars
+     /* ------------------------------------- */
 
-			window.setTimeout(function() {
-				$menu._locked = false;
-			}, 350);
+    var waypoints = $('.progress_container').waypoint(function() {
+        $('.progress .progress-bar').progressbar({
+            transition_delay: 1000
+        });
+    },{
+        offset: '50%'
+    });
 
-			return true;
 
-		};
+        /* --------------------------------------------------------
+    MAPS
+    ----------------------------------------------------------- */
+    var map = $('#map');
+    if(map.length > 0) {
+        google.maps.event.addDomListener(window, 'load', init);
+        var lattuide = map.attr('data-lat');
+        var longtuided = map.attr('data-lon');
+    }
+    function init() {
+        // Basic options for a simple Google Map
+        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+        var mapOptions = {
+            // How zoomed in you want the map to start at (always required)
+            zoom: 16,
+            scrollwheel: false,
+            navigationControl: false,
+            mapTypeControl: false,
+            scaleControl: false,
+            // The latitude and longitude to center the map (always required)
+            center: new google.maps.LatLng(lattuide, longtuided), // New York
 
-		$menu._show = function() {
+            // How you would like to style the map.
+            // This is where you would paste any style found on Snazzy Maps.
+            styles: [{"featureType":"water","stylers":[{"saturation":43},{"lightness":-11},{"hue":"#0088ff"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"hue":"#ff0000"},{"saturation":-100},{"lightness":99}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#808080"},{"lightness":54}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ece2d9"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#ccdca1"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#767676"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#b8cb93"}]},{"featureType":"poi.park","stylers":[{"visibility":"on"}]},{"featureType":"poi.sports_complex","stylers":[{"visibility":"on"}]},{"featureType":"poi.medical","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","stylers":[{"visibility":"simplified"}]}]
+        };
 
-			if ($menu._lock())
-				$body.addClass('is-menu-visible');
+        // Get the HTML DOM element that will contain your map
+        // We are using a div with id="map" seen below in the <body>
+        var mapElement = document.getElementById('map');
 
-		};
+        // Create the Google Map using our element and options defined above
+        var map = new google.maps.Map(mapElement, mapOptions);
 
-		$menu._hide = function() {
+        // Let's also add a marker while we're at it
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(lattuide, longtuided),
+            map: map,
+            title: 'evento!'
+        });
+    }
 
-			if ($menu._lock())
-				$body.removeClass('is-menu-visible');
-
-		};
-
-		$menu._toggle = function() {
-
-			if ($menu._lock())
-				$body.toggleClass('is-menu-visible');
-
-		};
-
-		$menu
-			.appendTo($body)
-			.on('click', function(event) {
-
-				event.stopPropagation();
-
-				// Hide.
-					$menu._hide();
-
-			})
-			.find('.inner')
-				.on('click', '.close', function(event) {
-
-					event.preventDefault();
-					event.stopPropagation();
-					event.stopImmediatePropagation();
-
-					// Hide.
-						$menu._hide();
-
-				})
-				.on('click', function(event) {
-					event.stopPropagation();
-				})
-				.on('click', 'a', function(event) {
-
-					var href = $(this).attr('href');
-
-					event.preventDefault();
-					event.stopPropagation();
-
-					// Hide.
-						$menu._hide();
-
-					// Redirect.
-						window.setTimeout(function() {
-							window.location.href = href;
-						}, 350);
-
-				});
-
-		$body
-			.on('click', 'a[href="#menu"]', function(event) {
-
-				event.stopPropagation();
-				event.preventDefault();
-
-				// Toggle.
-					$menu._toggle();
-
-			})
-			.on('keydown', function(event) {
-
-				// Hide on escape.
-					if (event.keyCode == 27)
-						$menu._hide();
-
-			});
-
-})(jQuery);
+});
