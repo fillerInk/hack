@@ -1,1 +1,3 @@
-# hack
+# .hack();
+
+24-Hours Hackathon
