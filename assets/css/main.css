@@ -1979,6 +1979,7 @@ Cover
 -------------------------------------------------------- */
 .home-cover {
   position: relative;
+  background-color: white;
 }
 
 .cover_slider {
@@ -2049,6 +2050,7 @@ Cover
 }
 .cover_slider .cover_item .slider_content .slider-content-inner .cover-date {
   font-size: 18px;
+  font-weight: bold;
   color: #ffffff;
   margin-bottom: 25px;
   text-transform: uppercase;
@@ -2824,7 +2826,7 @@ Cover
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #f82249;
+  background-color: #0652fd;
   color: #fff;
 }
 
@@ -3421,5 +3423,9 @@ textarea.form-control {
   border-bottom: solid 0 #0652fd;
 }
 .accordion_card .card-body {
+  font-size: 16px;
+}
+.text-black{
+  color: black;
   font-size: 16px;
 }
