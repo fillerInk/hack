@@ -15,6 +15,7 @@
     . PROJECTS SECTION (PORTFOLIO)
     . BLOG  SECTION
     . COUNTER SECTION
+    . Schedule Section
     . Testimonial SECTION
 	. Contact Section
 	.PROGRESSBAR
@@ -124,7 +125,7 @@ ul.nosyely_list {
   width: 30px;
   content: " ";
   position: absolute;
-  border-top: solid 3px #f50136;
+  border-top: solid 3px #0652fd;
   left: 0;
   top: 0;
 }
@@ -137,7 +138,7 @@ ul.nosyely_list {
   display: inline-block;
   padding: 25px;
   min-width: 120px;
-  background-color: #F44336;
+  background-color: #0652fd;
   color: #ffffff;
   font-size: 48px;
   font-weight: 600;
@@ -195,7 +196,7 @@ ul.nosyely_list {
   margin-bottom: 7px;
 }
 .icon_list li i {
-  background-color: #f50136;
+  background-color: #0652fd;
   display: block;
   border-radius: 50px;
   padding: 7px 0;
@@ -329,7 +330,7 @@ img {
 }
 .loader .loader-inner {
   position: absolute;
-  border: 2px solid #f50136;
+  border: 2px solid #0652fd;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -1627,6 +1628,10 @@ img {
   margin-bottom: -150px;
 }
 
+.wow {
+  visibility: hidden;
+}
+
 /*  ----------------------------------------------------
 2. HEADER
 -------------------------------------------------------- */
@@ -1660,7 +1665,7 @@ header ul.menu li a.nav-link {
   color: #ffffff;
 }
 header ul.menu li a.nav-link:hover {
-  color: #f50136;
+  color: #0652fd;
 }
 header ul.menu .search_btn {
   padding: 16px 8px !important;
@@ -1771,7 +1776,7 @@ footer .footer_box h4.footer_title:before {
   width: 30px;
   content: " ";
   position: absolute;
-  border-top: solid 3px #f50136;
+  border-top: solid 3px #0652fd;
   left: 0;
   top: 0;
 }
@@ -1788,18 +1793,18 @@ footer .footer_social li {
   margin: 5px;
 }
 footer .footer_social li a {
-  border: solid 1px #f50136;
+  border: solid 1px #0652fd;
   display: block;
   border-radius: 50px;
   padding: 7px 0;
   font-size: 24px;
-  color: #f50136;
+  color: #0652fd;
   width: 40px;
   height: 40px;
   text-align: center;
 }
 footer .footer_social li a:hover {
-  background-color: #f50136;
+  background-color: #0652fd;
   color: #ffffff;
 }
 footer ul.instagram_list {
@@ -1910,8 +1915,8 @@ footer .newsletter_form .form-control {
 }
 
 .btn-primary {
-  background-color: #f50136;
-  border: solid 1px #f50136;
+  background-color: #0652fd;
+  border: solid 1px #0652fd;
   color: #ffffff;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -1926,13 +1931,13 @@ footer .newsletter_form .form-control {
 
 .btn-primary-outline {
   background-color: transparent;
-  border: solid 1px #f50136;
-  color: #f50136;
+  border: solid 1px #0652fd;
+  color: #0652fd;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .btn-primary-outline:hover {
-  background-color: #f50136;
+  background-color: #0652fd;
   color: #ffffff;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -2035,7 +2040,7 @@ Cover
   font-size: 90px;
   font-weight: 500;
   line-height: 1.1;
-  color: #f50136;
+  color: #0652fd;
   -webkit-transform: translateY(20px);
   transform: translateY(20px);
   -webkit-transition: all 0.4s 600ms ease-in-out;
@@ -2152,7 +2157,7 @@ Cover
   color: #000000;
 }
 .cover_nav .cover_dots li.active {
-  border: solid 2px #f50136;
+  border: solid 2px #0652fd;
 }
 .cover_nav .cover_dots:before {
   content: " ";
@@ -2268,7 +2273,7 @@ Cover
   padding: 13px;
   font-size: 12px;
   font-weight: 600;
-  color: #f50136;
+  color: #0652fd;
 }
 
 @media (max-width: 767px) {
@@ -2303,7 +2308,7 @@ Cover
 
 .icon_box_one {
   background-color: #f0f2f6;
-  padding: 0;
+  padding: 12px;
   margin: 25px 0;
   position: relative;
   overflow: hidden;
@@ -2316,7 +2321,7 @@ Cover
   margin-top: -10px;
   padding: 0 15px;
   font-size: 72px;
-  color: #f50136;
+  color: #0652fd;
   vertical-align: middle;
   border-radius: 4px;
   display: block;
@@ -2337,7 +2342,7 @@ Cover
   transition: all 0.4s ease-in-out;
 }
 .icon_box_one .content a {
-  color: #f50136;
+  color: #0652fd;
   font-size: 14px;
   font-weight: 600;
   text-transform: capitalize;
@@ -2351,7 +2356,7 @@ Cover
 .icon_box_one:hover {
   -webkit-box-shadow: 0 10px 32px rgba(0, 0, 0, 0.25);
           box-shadow: 0 10px 32px rgba(0, 0, 0, 0.25);
-  background-color: #f50136;
+  background-color: #0652fd;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -2386,7 +2391,7 @@ Cover
   left: 0;
   font-size: 56px;
   width: 50px;
-  color: #f50136;
+  color: #0652fd;
   top: 0;
   bottom: auto;
   line-height: 1;
@@ -2431,7 +2436,7 @@ Cover
   transition: all ease-in-out 0.4s;
 }
 .speaker_box .speaker_img .info_box .name {
-  color: #f50136;
+  color: #0652fd;
   font-size: 16px;
   margin-bottom: 0;
   font-weight: 600;
@@ -2457,19 +2462,19 @@ Cover
   margin-left: 4px;
 }
 .speaker_box .speaker_social ul li a {
-  border: solid 1px #f50136;
+  border: solid 1px #0652fd;
   display: block;
   border-radius: 50px;
   padding: 7px 0;
   font-size: 24px;
-  color: #f50136;
+  color: #0652fd;
   width: 40px;
   height: 40px;
   text-align: center;
 }
 .speaker_box .speaker_social ul li a:hover {
   color: #ffffff;
-  background-color: #f50136;
+  background-color: #0652fd;
 }
 .speaker_box:hover .speaker_img img {
   width: 100%;
@@ -2479,7 +2484,7 @@ Cover
   transition: all ease-in-out 0.4s;
 }
 .speaker_box:hover .speaker_img .info_box {
-  background-color: #f50136;
+  background-color: #0652fd;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
@@ -2500,12 +2505,30 @@ Cover
   padding: 75px 30px;
   margin-bottom: 30px;
   text-align: center;
+  background-color: #e2e4e6;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+.price_box.first{
+  position: relative;
+  padding: 105px 30px;
+  margin-bottom: 30px;
+  text-align: center;
   background-color: #f0f2f6;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
+.price_box.second{
+  position: relative;
+  padding: 90px 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: #eef0f4;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
 .price_box .price_highlight {
-  background-color: #f50136;
+  background-color: #0652fd;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -2594,7 +2617,7 @@ Cover
   width: 30px;
   content: " ";
   position: absolute;
-  border-top: solid 4px #f50136;
+  border-top: solid 4px #0652fd;
   left: 0;
   top: 0;
 }
@@ -2608,7 +2631,7 @@ Cover
   font-weight: 400;
 }
 .event_box .event_info .event_date {
-  color: #f50136;
+  color: #0652fd;
   font-size: 12px;
   font-weight: 700;
 }
@@ -2620,7 +2643,7 @@ Cover
   line-height: 28px;
   font-size: 12px;
   font-weight: 700;
-  color: #f50136;
+  color: #0652fd;
 }
 .event_box .readmore_btn:hover {
   color: #18181c;
@@ -2639,7 +2662,7 @@ Cover
   font-size: 48px;
   display: inline-block;
   margin: 0;
-  color: #f50136;
+  color: #0652fd;
   font-weight: 600;
 }
 .counter_box h5 {
@@ -2659,7 +2682,7 @@ Cover
   min-width: 1000px;
 }
 .table.event_calender thead.event_title {
-  background-color: #f50136;
+  background-color: #0652fd;
   color: #ffffff;
   border: 0;
 }
@@ -2718,7 +2741,7 @@ Cover
 .table.event_calender tbody td.buy_link a {
   text-transform: capitalize;
   font-weight: 600;
-  color: #f50136;
+  color: #0652fd;
   text-decoration: underline;
   line-height: 24px;
   -webkit-transition: all ease-in-out 0.4s;
@@ -2730,11 +2753,245 @@ Cover
   transition: all ease-in-out 0.4s;
 }
 
+/*--------------------------------------------------------------
+# Schedule Section
+--------------------------------------------------------------*/
+
+.section-header {
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-header::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #0652fd;
+  bottom: 0;
+  left: calc(5% - 25px);
+}
+
+.section-header h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #9195a2;
+}
+
+.section-with-bg {
+  background-color: #f6f7fd;
+}
+
+
+#schedule {
+  padding: 60px 0 60px 0;
+}
+
+#schedule .nav-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+#schedule .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#schedule .nav-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #0e1b4d;
+  color: #fff;
+  padding: 10px 100px;
+}
+
+#schedule .nav-tabs a.active {
+  background-color: #f82249;
+  color: #fff;
+}
+
+#schedule .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto 30px auto;
+}
+
+#schedule .tab-pane {
+  transition: ease-in-out .2s;
+}
+
+#schedule .schedule-item {
+  border-bottom: 1px solid #cad4f6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+#schedule .schedule-item:hover {
+  background-color: #fff;
+}
+
+#schedule .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#schedule .schedule-item .speaker {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#schedule .schedule-item .speaker img {
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+#schedule .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#schedule .schedule-item h4 span {
+  font-style: italic;
+  color: #19328e;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#schedule .schedule-item p {
+  font-style: italic;
+  color: #152b79;
+  margin-bottom: 0;
+}
+
+@media (min-width: 991px) {
+  #schedule .sub-heading {
+    width: 75%;
+  }
+}
+
+@media (max-width: 991px) {
+  #header {
+    background: rgba(6, 12, 34, 0.98);
+    height: 70px;
+    padding: 15px 0;
+    transition: all 0.5s;
+  }
+
+  #schedule .nav-tabs a {
+    padding: 8px 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  #schedule .nav-tabs a {
+    padding: 8px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  #schedule .nav-tabs a {
+    padding: 8px 30px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# F.A.Q Section
+--------------------------------------------------------------*/
+
+#faq {
+  padding: 60px 0;
+}
+
+#faq #faq-list {
+  padding: 0;
+  list-style: none;
+}
+
+#faq #faq-list li {
+  border-bottom: 1px solid #ddd;
+}
+
+#faq #faq-list a {
+  padding: 18px 0;
+  display: block;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+#faq #faq-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+#faq #faq-list p {
+  margin-bottom: 20px;
+}
+
+#faq #faq-list a.collapse {
+  color: #f82249;
+}
+
+#faq #faq-list a.collapsed {
+  color: #000;
+}
+
+#faq #faq-list a.collapsed i::before {
+  content: "\f055" !important;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+
+  #faq #faq-list a {
+    font-size: 18px;
+  }
+
+  #faq #faq-list i {
+    top: 13px;
+  }
+}
+
 /*  ----------------------------------------------------
 9 testimonial
 -------------------------------------------------------- */
 .testimonial_carousel {
-  border: solid 2px #f50136;
+  border: solid 2px #0652fd;
   padding: 25px;
   position: relative;
   margin: 15px 0;
@@ -2771,7 +3028,7 @@ Cover
   text-transform: capitalize;
 }
 .testimonial_carousel .testimonial_author p span {
-  color: #f50136;
+  color: #0652fd;
 }
 .testimonial_carousel:before {
   content: "\f347";
@@ -2841,7 +3098,7 @@ Cover
   padding: 25px 0;
 }
 .blog_card .blog_box_data .blog_date {
-  background-color: #f50136;
+  background-color: #0652fd;
   padding: 15px 30px;
   border-radius: 2px;
   margin-bottom: 15px;
@@ -2858,7 +3115,7 @@ Cover
   color: #838383;
 }
 .blog_card .blog_box_data .blog_meta a:hover {
-  color: #f50136;
+  color: #0652fd;
 }
 .blog_card .blog_box_data .blog_word {
   word-break: break-all;
@@ -2866,7 +3123,7 @@ Cover
 .blog_card .blog_box_data .readmore_btn {
   font-size: 12px;
   font-weight: 600;
-  color: #f50136;
+  color: #0652fd;
   text-decoration: underline;
 }
 .blog_card .blog_box_data .readmore_btn:hover {
@@ -2906,12 +3163,12 @@ Cover
   border: solid 2px transparent;
 }
 .nav_menu li a:hover {
-  border: solid 2px #f50136;
+  border: solid 2px #0652fd;
 }
 .nav_menu li span {
   border-radius: 50px;
   padding: 12px 8px;
-  border: solid 2px #f50136;
+  border: solid 2px #0652fd;
 }
 
 .widget {
@@ -2951,7 +3208,7 @@ Cover
   font-size: 15px;
 }
 .widget_recent_posts .content a:hover {
-  color: #f50136;
+  color: #0652fd;
 }
 .widget_recent_posts .content p {
   font-size: 12px;
@@ -2985,7 +3242,7 @@ Cover
   text-transform: capitalize;
 }
 .widget_categories ul li a:hover {
-  color: #f50136;
+  color: #0652fd;
 }
 
 .widget_instagram {
@@ -3023,7 +3280,7 @@ Cover
 }
 .widget_tags ul li a:hover {
   background-color: #ffffff;
-  border: solid 1px #f50136;
+  border: solid 1px #0652fd;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
@@ -3052,18 +3309,18 @@ Cover
   margin: 5px;
 }
 .social_list li a {
-  border: solid 1px #f50136;
+  border: solid 1px #0652fd;
   display: block;
   border-radius: 50px;
   padding: 7px 0;
   font-size: 24px;
-  color: #f50136;
+  color: #0652fd;
   width: 40px;
   height: 40px;
   text-align: center;
 }
 .social_list li a:hover {
-  background-color: #f50136;
+  background-color: #0652fd;
   color: #ffffff;
 }
 
@@ -3087,7 +3344,7 @@ Cover
 }
 .form-control:focus {
   background-color: #ffffff;
-  border-color: #f50136;
+  border-color: #0652fd;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
@@ -3121,7 +3378,7 @@ textarea.form-control {
 .single_progressbar .progress {
   margin-bottom: 5px;
   overflow: hidden;
-  background: #f50136;
+  background: #0652fd;
   /* The Fallback */
   background: rgba(245, 1, 54, 0.2);
   border-radius: 1px;
@@ -3133,11 +3390,11 @@ textarea.form-control {
   font-size: 16px;
   line-height: 16px;
   text-align: center;
-  background-color: #f50136;
+  background-color: #0652fd;
 }
 
 .accordion_card {
-  border: solid 1px #f50136;
+  border: solid 1px #0652fd;
   border-radius: 0;
   margin: 15px 0;
 }
@@ -3152,15 +3409,15 @@ textarea.form-control {
 }
 .accordion_card .card-header h5 a {
   background-color: #ffffff;
-  color: #f50136;
+  color: #0652fd;
   display: block;
   padding: 15px;
-  border-bottom: solid 1px #f50136;
+  border-bottom: solid 1px #0652fd;
 }
 .accordion_card .card-header h5 a.collapsed {
-  background-color: #f50136;
+  background-color: #0652fd;
   color: #ffffff;
-  border-bottom: solid 0 #f50136;
+  border-bottom: solid 0 #0652fd;
 }
 .accordion_card .card-body {
   font-size: 16px;
