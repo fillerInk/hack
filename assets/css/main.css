@@ -1816,7 +1816,8 @@ footer ul.instagram_list li {
   display: inline-block;
   width: 30%;
   margin: 0 0 2% 2%;
-  float: left;
+  overflow: hidden;
+  float: unset;
 }
 footer .newsletter_form .form-control {
   background-color: #1f1039;
