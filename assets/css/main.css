@@ -2048,6 +2048,7 @@ Cover
 }
 .cover_slider .cover_item .slider_content .slider-content-inner .cover-date {
   font-size: 18px;
+  font-weight: bold;
   color: #ffffff;
   margin-bottom: 25px;
   text-transform: uppercase;
