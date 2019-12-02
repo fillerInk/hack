@@ -1,9 +1,3 @@
-/*
- * Evento -  Event html  Template
- * Build Date: jan 2018
- * Author: colorlib
- * Copyright (C) 2018 colorlib
- */
 /* ------------------------------------- */
 /* TABLE OF CONTENTS
 /* -------------------------------------
@@ -122,6 +116,21 @@ ul.nosyely_list {
   font-size: 36px;
 }
 .section_title .title:before {
+  width: 30px;
+  content: " ";
+  position: absolute;
+  border-top: solid 3px #0652fd;
+  left: 0;
+  top: 0;
+}
+
+.section_title .title_contact {
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 36px;
+}
+.section_title .title_contact:before {
   width: 30px;
   content: " ";
   position: absolute;
@@ -306,6 +315,68 @@ img {
     display: none !important;
   }
 }
+
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+
+#contact {
+  padding: 60px 0;
+}
+
+#contact .contact-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact .contact-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #0652fd;
+}
+
+#contact .contact-info address,
+#contact .contact-info p {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+#contact .contact-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#contact .contact-info a {
+  color: #ffffff;
+}
+
+#contact .contact-info a:hover {
+  color: #f82249;
+}
+
+#contact .contact-address,
+#contact .contact-phone,
+#contact .contact-email {
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  #contact .contact-address,
+  #contact .contact-phone,
+  #contact .contact-email {
+    padding: 20px 0;
+  }
+
+  #contact .contact-phone {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+}
+
 /* ----------------Responsive Align ------------------- */
 @media all and (max-width: 767px) {
   .text-center-xs {
@@ -1802,6 +1873,25 @@ header.sticky_header {
   max-height: 40px;
 }
 
+.logo {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    max-width: 200px;
+  }
+}
+.logox {
+  max-width: 400px;
+}
+
+@media (max-width: 767px) {
+  .logox {
+    max-width: 200px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -2178,12 +2268,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 3 Footer
 -------------------------------------------------------- */
 footer {
-  padding: 50px 0 100px;
+  padding: 50px 0 0px;
   background-color: #0b031b;
 }
 footer .footer_box {
   position: relative;
   margin-top: 50px;
+  align-content: center;
 }
 footer .footer_box h4.footer_title {
   text-transform: uppercase;
@@ -2201,9 +2292,21 @@ footer .footer_box h4.footer_title:before {
 }
 footer .footer_header {
   margin-bottom: 30px;
+  align-content: center;
+}
+footer .footer_header p{
+  color: #0652fd;
+  text-align: center;
+  margin-bottom: 0%;
+}
+footer .footer_header h2{
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0%;
 }
 footer .footer_social {
   list-style: none;
+  text-align: center;
   padding: 0;
   margin: 0;
 }
